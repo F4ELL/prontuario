@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html> 
+
+<head>
+</head>
+<body>
+	<form>
+		Temperatura: 
+		<input type = "text" id = "temperatura"><br>
+		Pressão: 
+		<input type = "text" id = "pressao"><br>
+		Sintomas: 
+		<textarea id = "sintomas"></textarea><br>
+		Diagnóstico: 
+		<textarea id = "diagnostico"></textarea><br>
+		Medicamentos: 
+		<textarea id = "medicamentos"></textarea><br>
+		Outras Recomendações: 
+		<textarea id = "recomendacoes"></textarea><br>
+	</form>
+	<script>
+		let prontuario = [];
+		let id = 0;			
+		Cadastrar = () => {
+		prontuario.push({
+			'id': id++,
+			'temperatura': $("#Temperatura").val(),
+			'pressao': $("#Pressao").val(),
+			'sintomas': $("#Sintomas").val(),
+			'diagnostico': $("#Diagnostico").val(),
+			'medicamentos': $("#Medicamentos").val(),
+			'recomendacoes': $("#Recomendacoes").val(),
+		})
+
+	}
+	</script>
+</body>
+
+</html>
